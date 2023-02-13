@@ -90,7 +90,7 @@
         </v-card>
       </div>
       <div class="col-md-7" style="margin-top: 70px">
-        <v-card style="height: 506px">
+        <v-card style="height: 542px">
           <p class="text-center" style="font-size: 20px; font-weight: 700">
             Payment
           </p>
@@ -312,6 +312,74 @@ export default {
 };
 </script>
 <style scoped>
+[v-cloak] {
+  display: none;
+}
+/* .v-text-field /deep/ .v-text-field__details{display:none} */
+.CardNumberField >>> .is-hidden {
+  visibility: visible !important;
+}
+.InputContainer .InputElement::placeholder {
+  visibility: hidden !important;
+}
+.help-block {
+  color: red;
+  font-size: 13px;
+}
+.control-label {
+  margin-left: 0px;
+  font-weight: 500;
+  color: #000;
+}
+.v-text-field /deep/ .v-input__slot {
+  min-height: 45px !important;
+  border-radius: 0px !important;
+}
+.ElementsApp >>> input::placeholder {
+  display: none !important;
+}
+#card-number,
+#card-cvc,
+#card-expiry {
+  padding-top: 10px;
+}
+.stripeError {
+  color: red;
+  font-style: italic;
+}
+.uk-padding {
+  padding: 20px;
+   background-color: rgb(231, 229, 229);
+}
+.cvc-field {
+  width: 200px;
+}
+.payment-card-title {
+  background: rgb(34, 50, 132);
+  color: white;
+}
+.payment-amount {
+  display: grid;
+}
+.pay-btn{
+  background: rgb(18, 178, 12);
+}
+.payment-container {
+  width: 400px;
+}
+.stripe-title {
+  background: #e4e4e4;
+  font-size: 18px;
+  font-weight: 500;
+}
+.btn-primary {
+  background-color: #be5683;
+  border-color: #be5683;
+}
+.btn-primary:hover {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
 .v-application a {
   cursor: pointer;
   text-decoration: none;
@@ -320,7 +388,7 @@ export default {
   margin-top: 80px !important;
 }
 .card_height {
-  height: 500px;
+  height: 530px;
   width: 800px;
 }
 .min-width {

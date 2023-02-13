@@ -1,13 +1,16 @@
 <template>
   <div>
     <div class="mt-20"></div>
-    <v-card style="height: 1200px; width:1000px;margin-left:10px" class="course-card">
+    <v-card
+      style="height: 1200px; width: 1000px; margin-left: 10px"
+      class="course-card"
+    >
       <v-container>
         <div class="header-dots mt-20">
           <div>
             <div class="row ml-1">
               <v-card
-                class="p-2 col-md-2 mx-3 my-2 course-card row card-height"
+                class="mx-3 my-2 course-card row card-height"
                 v-for="(
                   ready_vet_data, ready_vet_data_index
                 ) in readyvet_content"
@@ -20,8 +23,8 @@
               <img src="@/assets/images/ReadyVet/Platinum.jpg" width="160px" />
             </div>
           </div> -->
-                <div class="col-md-8">
-                  <div>
+                <div class="col-md-12">
+                  <div class="d-flex justify-content-center">
                     <div class="d-flex mb-3">
                       <span
                         class="course-content-width course_font text-center"
@@ -31,31 +34,28 @@
                     </div>
                   </div>
 
-                  <div class="d-flex mb-3">
+                  <div class="d-flex mb-3 text-center">
                     <span class="course-content-width">
                       £ {{ ready_vet_data.price }}
                     </span>
                   </div>
 
-                  <div class="d-flex mb-3">
-                    <div class="d-flex mb-2 course-content-width">
-                      <span>{{ $t("Discount") }}</span>
+                  <div class="d-flex  text-center " style="margin-left:20px">
+                    <span>{{ $t("Discount") }}</span>
 
-                      <span class="course-content-width sub_course sub">
-                        :&nbsp;{{ ready_vet_data.discount }} %</span
-                      >
-                    </div>
-                  </div>
-                  <div class="d-flex mt-3">
-                    <span clas="course-content-width course_font text-center mt-3">
-                      <a href="#">More Details</a>
-                    </span>
+                    <span class="sub_course sub_course_font">
+                      :&nbsp;{{ ready_vet_data.discount }} %</span
+                    >
                   </div>
                 </div>
-
-                <span class="mt-139 d-flex justify-content-center">
+                <div class="mt-138">
+                <div class="more_details_margin text-center">
+                  <a href="#">More Details</a>
+                </div>
+                <div class="text-center">
                   <v-btn small color="primary">Select</v-btn>
-                </span>
+                </div>
+                </div>
               </v-card>
             </div>
 
@@ -130,7 +130,7 @@ export default {
 }
 .card-height {
   height: 340px;
-  width: 160px;
+  width: 175px;
 }
 .font-size {
   font-size: 20px;
@@ -139,4 +139,15 @@ export default {
 .mt-139 {
   margin-top: 139px;
 } */
+.more_details_margin {
+  min-width: 97px;
+}
+.sub_course_font{
+  font-size:14px;
+  margin-top:1px
+}
+.mt-138{
+      margin-top: 138px;
+
+}
 </style>
