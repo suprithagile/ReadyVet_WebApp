@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "readyvet_name": "Silver",
+    "price": "12000",
+    "img_url": "@/assets/images/ReadyVet/silver.jfif",
+    "discount":12
+  },
+  {
+    "id": "2",
+    "readyvet_name": "Gold",
+    "price": "20000",
+    "img_url": "@/assets/images/ReadyVet/gold.jfif",
+    "discount":12
+  },
+  {
+    "id": "3",
+    "readyvet_name": "Platinum",
+    "price": "200000",
+    "img_url": "@/assets/images/ReadyVet/gold.jfif",
+    "discount":20
+  }
+]

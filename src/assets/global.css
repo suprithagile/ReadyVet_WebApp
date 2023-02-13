@@ -1,0 +1,517 @@
+/* for search bar */
+
+.srch_bar {
+    max-width: 353px;
+    margin-right: 36px;
+}
+.theme--light.v-data-table{min-height: 300px;}
+.text-muted{font-size: 20px;}
+.v-btn__content{min-width: 65px;}
+/* for star */
+
+.required_field::after {
+    content: "*";
+    color: red;
+    margin-left: 2px;
+}
+
+.f-13 {
+    font-size: 13px;
+}
+.fav-position{position: absolute !important;top: 6px; right: 6px;}
+.app-main__inner {
+    background: #fff !important;
+}
+.bg-theme-green{ background:#3ac47d !important}
+/* custom css start here */
+.v-text-field .v-label {
+    font-size: 13px !important;
+}
+
+.v-input--selection-controls .v-radio>.v-label {
+    font-size: 13px !important;
+}
+
+body {
+    font-size: 0.84rem !important;
+}
+
+.app-page-title {
+    margin: -30px -30px 0px !important;
+    padding: 50px 51px 20px 51px !important;
+}
+
+.prop-head {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 2px !important;
+}
+
+.layout {
+    flex-flow: wrap !important;
+}
+
+.router-link-active {
+    background: #e0f3ff12 !important;
+}
+
+
+.align-baseline {
+    align-items: baseline;
+}
+.router-link-active  a{
+    text-decoration: none;
+}
+.flex-start {
+    align-items: flex-start !important;
+}
+
+.flex-end {
+    justify-content: flex-end !important;
+}
+
+.search-job-title {
+    height: auto !important
+}
+
+.space-between {
+    justify-content: space-between !important;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.widget-chart {
+    color: #000;
+    font-weight: bold;
+}
+
+.verify-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+}
+
+.filter-card {
+    background: #f4f4f478;
+    padding: 16px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.filters {
+    width: 78%;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+.filter-btn {
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexwrap {
+    flex-flow: wrap;
+}
+
+.disable-section {
+    background: #ffffff;
+    filter: blur(3px) grayscale(6%);
+    opacity: 0.6;
+}
+
+.disable-none {
+    visibility: hidden !important;
+}
+
+.filter-input {
+    width: 146px;
+}
+
+.file-upload {
+    display: block;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+._vue-flash-msg-body._vue-flash-msg-_right-top {
+    top: 10% !important;
+    right: 6%;
+    z-index: 9999999999 !important;
+}
+
+.file-upload .file-select {
+    display: block;
+    border: 1px solid #00000052;
+    color: #000000;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: left;
+    background: #ffffff;
+    overflow: hidden;
+    position: relative;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/* .prop-default {
+    background-image: url("./images/property.png");
+} */
+
+.file-upload .file-select .file-select-button {
+    background: #dce4ec;
+    padding: 0 10px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.file-upload .file-select .file-select-name {
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.file-upload .file-select:hover {
+    border-color: #0971d8;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.file-upload .file-select:hover .file-select-button {
+    background: #0971d8;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.file-upload.active .file-select {
+    border-color: #3fa46a;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.file-upload.active .file-select .file-select-button {
+    background: #3fa46a;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.file-upload .file-select input[type="file"] {
+    z-index: 100;
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.file-upload .file-select.file-select-disabled {
+    opacity: 0.65;
+}
+
+.file-upload .file-select.file-select-disabled:hover {
+    cursor: default;
+    display: block;
+    border: 2px solid #dce4ec;
+    color: #34495e;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+    text-align: left;
+    background: #ffffff;
+    overflow: hidden;
+    position: relative;
+}
+
+.file-upload .file-select.file-select-disabled:hover .file-select-button {
+    background: #dce4ec;
+    color: #666666;
+    padding: 0 10px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.file-upload .file-select.file-select-disabled:hover .file-select-name {
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.job-title {
+    font-weight: 600;
+}
+
+.m-0 {
+    margin: 0px;
+}
+
+.v-application .mr-10 {
+    margin-right: 10px !important;
+}
+
+.chip {
+    background: #ededed;
+    padding: 5px 18px;
+    margin-right: 8px;
+    border-radius: 6px;
+    font-size: 11px;
+}
+
+.job-actions-parent {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.hr-class {
+    border-color: #fff;
+    margin: 4px
+}
+
+.job-posted {
+    margin: 11px 0px;
+    border-top: 1px dotted #c3c1c1;
+    padding: 12px 0px;
+    font-size: 11px;
+}
+
+.job-key {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 4px !important;
+}
+
+.job-title {
+    text-transform: capitalize;
+    font-size: 14px !important;
+    font-weight: 500;
+    margin-bottom: 9px !important;
+    line-height: 20px;
+    color: #1976d2;
+}
+.job-title-small {
+    text-transform: capitalize;
+    font-size: 14px !important;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    line-height: 20px;
+   
+}
+.desc-title{min-width: 90px;display: inline-block;font-weight: 600;font-size: 12px;}
+.desc-title-width{min-width: 108px;display: inline-block;font-weight: 600;font-size: 12px;}
+.desc-content-width{min-width: 250px;}
+.job-content-title{min-width: 120px;display: inline-block;font-weight: 600;font-size: 12px;}
+.job-details-card{display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 160px;}
+.action-btn-right{justify-content: flex-end;
+    display: flex;}
+.job-title-main {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0px 0px 10px 0px;
+}
+
+.jd-top-header {
+    width: 100%;
+    justify-content: space-between;
+    align-items: self-end;
+}
+
+.search-input {
+    width: 300px;
+    padding: 0px 10px;
+}
+.p-20{padding:20px}
+.search-bar {
+    border-radius: 18px;
+    padding: 7px 18px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 2px 11px 0px #1976d233;
+    box-shadow: 0px 2px 11px 0px #1976d233;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: center !important;
+    width: 100%;
+    justify-content: space-between;
+    border: none;
+    margin-bottom: 20px !important;
+}
+
+.view-all {
+    width: 100%;
+    margin: 7px 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #1976d2;
+    text-align: center;
+}
+
+.job-results-card {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.job-results-card>div {
+    width: 48%;
+    position: relative;
+    margin: 8px 5px;
+    padding: 19px 20px;
+    background: white;
+    box-shadow: 0px 0px 5px 2px #d1d1d182;
+    min-height: 180px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-title {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+}
+
+.stepper-height {
+    min-height: 400px !important;
+    max-height: auto !important;
+}
+
+.app-main__inner {
+    padding: 0px !important;
+}
+.left-container{
+    position: sticky !important;
+    /* position: -webkit-sticky; */
+    top: 68px !important;
+  }
+
+.main-20 {
+    margin: 20px;
+}
+.justify-end{    justify-content: end;}
+/* .job-actions-parent>div{width:50%} */
+/* custom css ends here */
+.flow-wrap {
+    flex-flow: wrap;
+}
+.pbt-0{padding: 2px 20px;}
+
+/* media queries start here */
+/* On screens that are 992px or less, set the background color to blue */
+@media only screen and (min-width: 200px) and (max-width: 1276px) {
+    .prop-img {
+        width: 100% !important;
+        height: 200px !important;
+    }
+
+    .flex-column-res {
+        flex-direction: column;
+    }
+
+    .flow-wrap {
+        flex-flow: wrap;
+    }
+
+    .filters {
+        width: 100%;
+    }
+
+    .filter-btn {
+        width: 100% !important;
+    }
+
+    .filter-btn>div>.v-btn {
+        margin-right: 22px;
+    }
+
+    .v-application .pr-8 {
+        padding-right: 2px !important;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    .job-results-card>div {
+        width: 100% !important;
+    }
+
+    .prop-view {
+        flex-direction: column;
+        padding: 0px !important;
+    }
+
+    .v-btn:not(.v-btn--round).v-size--small {
+        width: 100px !important;
+    }
+
+    .property-table {
+        width: 100% !important;
+    }
+
+    .filter-btn {
+        width: 100% !important;
+    }
+
+    .filter-btn>div>.v-btn {
+        margin-right: 22px;
+    }
+
+    .direction-column {
+        flex-direction: column !important;
+    }
+
+    .v-btn {
+        width: 100%;
+    }
+
+    .news-card>div,
+    .property-card>div {
+        width: 100% !important;
+        margin-right: 0px !important;
+    }
+    
+}
+
+/* media queries ends here*/

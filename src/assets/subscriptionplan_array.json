@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Silver",
+        "price": 12000,
+        "disocount": 15
+    },
+    {
+        "name": "Gold",
+        "price": 15000,
+        "disocount": 20
+    },
+    {
+        "name": "Platinum",
+        "price": 20000,
+        "disocount": 31
+    }
+]

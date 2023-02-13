@@ -1,0 +1,29 @@
+[
+    {
+      "salutation": "Mr",
+      "name": "Peter",
+      "lastname": "Parker",
+      "mobile": 93939949949,
+      "email": "Peter.parker@domains.com",
+      "subscription_plan": "Platinum",
+      "status":1
+    },
+    {
+      "salutation": "Mr",
+      "name": "Ben",
+      "lastname": "Allen",
+      "mobile": 1234567888,
+      "email": "ben.allen@domains.com",
+      "subscription_plan": "Gold",
+      "status":1
+    },
+    {
+      "salutation": "Mr",
+      "name": "Benjamin",
+      "lastname": "Frank",
+      "mobile": 1234567666,
+      "email": "benjamin.frank@domains.com",
+      "subscription_plan": "Silver",
+      "status":1
+    }
+  ]

@@ -1,0 +1,22 @@
+
+  [
+    {
+      "coupon_name": "APR15",
+      "discount": 15,
+      "start_date":"20-04-2023",
+      "end_date":"22-04-2023"
+    },
+    {
+
+        "coupon_name": "MAY20",
+        "discount": 20,
+        "start_date":"14-05-2023",
+        "end_date":"20-05-2023"
+    },
+    {
+        "coupon_name": "DEC31",
+        "discount": 31,
+        "start_date":"20-12-2023",
+        "end_date":"25-12-2023"
+    }
+  ]
