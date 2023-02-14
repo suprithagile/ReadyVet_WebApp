@@ -18,7 +18,9 @@
                 <p class="stripe-head">Name &nbsp; &nbsp;: {{ email }}</p>
               </v-col>
               <v-col cols="12" md="6" class="pt-0 pb-0">
-                <p class="stripe-head">Price  &nbsp; &nbsp;  &nbsp;: {{ price }}</p>
+                <p class="stripe-head">
+                  Price &nbsp; &nbsp; &nbsp;: {{ price }}
+                </p>
               </v-col>
               <v-col cols="12" md="6" class="pt-0 pb-0">
                 <p class="stripe-head">Discount: {{ discount }}</p>
@@ -63,7 +65,7 @@
         </v-card>
       </div>
       <div class="col-md-7" style="margin-top: 70px">
-        <v-card>
+        <v-card style="width: 360px;">
           <p
             class="text-center"
             style="font-size: 20px; font-weight: 700; padding: 20px"
@@ -359,7 +361,7 @@ export default {
 }
 .card_height {
   /* height: 530px; */
-  width: 800px;
+  width: 360px;
 }
 .min-width {
   min-width: 90px;
