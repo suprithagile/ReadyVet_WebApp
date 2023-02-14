@@ -4,64 +4,28 @@
       <div class="col-md-5">
         <v-card class="card_height">
           <div class="mt-20">
-            <p class="text-center" style="font-size: 20px; font-weight: 700">
-              Subscription Plan
+            <p
+              class="text-center"
+              style="font-size: 20px; font-weight: 700; padding-top: 20px"
+            >
+              Subscription Details
             </p>
           </div>
 
           <v-container>
             <v-row>
               <v-col cols="12" md="12" class="pt-2 pb-0">
-                <v-tooltip bottom>
-                  <template v-slot:activator="{ on }">
-                    <v-text-field
-                      v-on="on"
-                      v-model="email"
-                      v-bind:label="$t('Name')"
-                      required
-                      outlined
-                      disabled
-                      dense
-                    ></v-text-field>
-                  </template>
-                  <span>{{ $t("Name") }}</span>
-                </v-tooltip>
+                <p class="stripe-head">Name &nbsp; &nbsp;: {{ email }}</p>
               </v-col>
               <v-col cols="12" md="6" class="pt-0 pb-0">
-                <v-tooltip bottom>
-                  <template v-slot:activator="{ on }">
-                    <v-text-field
-                      v-on="on"
-                      v-model="price"
-                      v-bind:label="$t('Price')"
-                      required
-                      disabled
-                      outlined
-                      dense
-                    ></v-text-field>
-                  </template>
-                  <span>{{ $t("Price") }}</span>
-                </v-tooltip>
+                <p class="stripe-head">Price  &nbsp; &nbsp;  &nbsp;: {{ price }}</p>
               </v-col>
               <v-col cols="12" md="6" class="pt-0 pb-0">
-                <v-tooltip bottom>
-                  <template v-slot:activator="{ on }">
-                    <v-text-field
-                      v-on="on"
-                      v-model="discount"
-                      v-bind:label="$t('Discount(%)')"
-                      required
-                      outlined
-                      disabled
-                      dense
-                    ></v-text-field>
-                  </template>
-                  <span>{{ $t("Discount") }}</span>
-                </v-tooltip>
+                <p class="stripe-head">Discount: {{ discount }}</p>
               </v-col>
               <v-col cols="12" md="12" class="pt-0 pb-0">
-                <span class="d-flex">
-                  <span>
+                <div class="row">
+                  <div class="col-sm-6">
                     <v-tooltip bottom>
                       <template v-slot:activator="{ on }">
                         <v-text-field
@@ -73,11 +37,20 @@
                         ></v-text-field>
                       </template>
                     </v-tooltip>
-                  </span>
-                  <span class="mb-2 ml-2">
-                    <v-btn small color="primary">Apply Coupon</v-btn>
-                  </span>
-                </span>
+                  </div>
+                  <div
+                    class="col-sm-6"
+                    style="
+                      padding-top: 0px;
+                      padding-bottom: 47px;
+                      margin-top: -17px;
+                    "
+                  >
+                    <v-btn small color="primary" style="width: 100% !important"
+                      >Apply Coupon</v-btn
+                    >
+                  </div>
+                </div>
               </v-col>
               <v-divider></v-divider>
               <div class="d-flex justify-content-end">
@@ -90,8 +63,11 @@
         </v-card>
       </div>
       <div class="col-md-7" style="margin-top: 70px">
-        <v-card style="height: 542px">
-          <p class="text-center" style="font-size: 20px; font-weight: 700">
+        <v-card>
+          <p
+            class="text-center"
+            style="font-size: 20px; font-weight: 700; padding: 20px"
+          >
             Payment
           </p>
 
@@ -109,7 +85,7 @@
               <div
                 class="col-xs-12 form-group required"
                 id="cardparent"
-                style="margin-bottom: 0px;margin-left:15px"
+                style="margin-bottom: 0px; margin-left: 15px"
               >
                 <label class="control-label" for="Card Number"
                   >Card Holder Name (as it appears on the card)
@@ -147,7 +123,7 @@
               <div class="row" style="display: flex">
                 <div
                   class="col-xs-6 form-group required"
-                  style="padding: 10px 30px"
+                  style="padding: 10px 11px 0px 31px"
                 >
                   <label class="control-label" for="Card CVC"> Card CVC </label>
                   <div class="uk-form-controls">
@@ -164,7 +140,7 @@
 
                 <div
                   class="col-xs-6 form-group required"
-                  style="padding: 10px 30px"
+                  style="padding: 10px 11px 0px 31px"
                 >
                   <label class="control-label" for="Expiry Month">
                     Expiry
@@ -181,11 +157,11 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row" style="width: 100%">
                 <button
                   @click.prevent="submitFormToCreateToken()"
                   class="btn btn-primary btn-lg btn-block"
-                  style="margin: 5px 27px; color: #fff"
+                  style="margin: 5px 27px; color: #fff; width: 93%"
                   type="submit"
                   :disabled="
                     btnloading ||
@@ -301,14 +277,8 @@ export default {
       nameRules: [(v) => !!v || "Card Holder Name is required"],
     };
   },
- 
-   
-  methods: {
 
-
-
-  
-  },
+  methods: {},
 };
 </script>
 <style scoped>
@@ -349,7 +319,7 @@ export default {
 }
 .uk-padding {
   padding: 20px;
-   background-color: rgb(231, 229, 229);
+  /* background-color: rgb(231, 229, 229); */
 }
 .cvc-field {
   width: 200px;
@@ -361,7 +331,7 @@ export default {
 .payment-amount {
   display: grid;
 }
-.pay-btn{
+.pay-btn {
   background: rgb(18, 178, 12);
 }
 .payment-container {
@@ -388,16 +358,19 @@ export default {
   margin-top: 80px !important;
 }
 .card_height {
-  height: 530px;
+  /* height: 530px; */
   width: 800px;
 }
 .min-width {
   min-width: 90px;
 }
 .align_pay_text {
-  padding: 5px;
+  padding: 13px !important;
   font-weight: 600;
-  border: 2px solid;
+  border: none;
+  background: #daf2e7;
+  font-size: 19px;
+  border: none !important;
 }
 .card-height-payament {
   height: 508px !important;
@@ -406,5 +379,10 @@ export default {
   padding: 2px;
   font-weight: 600;
   border: 2px solid;
+}
+.stripe-head {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 9px;
 }
 </style>

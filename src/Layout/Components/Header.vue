@@ -2,9 +2,7 @@
   <div :class="headerbg" class="app-header header-shadow">
     <div class="logo-src" />
     <div class="app-header__content"> 
-      <div class="d-flex justify-content-center"> 
-      <p style="margin-left:400px; font-size:20px">READYVET</p>   
-      </div>
+     
       <div class="app-header-right">    
           <HeaderMenu/> 
         <UserArea />

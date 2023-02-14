@@ -1,16 +1,16 @@
 <template>
   <div>
     <div class="mt-20"></div>
-    <v-card
-      style="height: 1200px; width: 1000px; margin-left: 10px"
+    <v-row
+      
       class="course-card"
     >
-      <v-container>
+      <v-row style="    width: 100%;">
         <div class="header-dots mt-20">
-          <div>
-            <div class="row ml-1">
+         
+            <div class="row ml-1 space-around">
               <v-card
-                class="mx-3 my-2 course-card row card-height"
+                class="col-sm-3 mx-3 my-2 course-card row card-height"
                 v-for="(
                   ready_vet_data, ready_vet_data_index
                 ) in readyvet_content"
@@ -34,13 +34,13 @@
                     </div>
                   </div>
 
-                  <div class="d-flex mb-3 text-center">
+                  <div class="d-flex mb-3 justify-center">
                     <span class="course-content-width">
                       £ {{ ready_vet_data.price }}
                     </span>
                   </div>
 
-                  <div class="d-flex  text-center " style="margin-left:20px">
+                  <div class="d-flex  justify-center">
                     <span>{{ $t("Discount") }}</span>
 
                     <span class="sub_course sub_course_font">
@@ -60,10 +60,10 @@
             </div>
 
             <!-- <div class="d-flex"> -->
-          </div>
+        
         </div>
-      </v-container>
-    </v-card>
+      </v-row>
+    </v-row>
   </div>
 </template>
 <script>
@@ -77,7 +77,8 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
+.justify-center{justify-content: center}
 .main-20 {
   margin: 20px;
 }
@@ -87,13 +88,13 @@ export default {
 }
 
 .course-content-width {
-  min-width: 110px !important;
+ 
   font-size: 12px !important;
   max-width: 200px !important;
 }
-.course-card {
+/* .course-card {
   box-shadow: 0px 0px 2px black !important;
-}
+} */
 .check_box_margin {
   margin-top: 45px !important;
 }
@@ -129,8 +130,9 @@ export default {
   margin-top: 20px;
 }
 .card-height {
-  height: 340px;
-  width: 175px;
+    height: auto;
+    width: 175px;
+    min-height: 207px;
 }
 .font-size {
   font-size: 20px;
@@ -146,8 +148,5 @@ export default {
   font-size:14px;
   margin-top:1px
 }
-.mt-138{
-      margin-top: 138px;
-
-}
+.space-around{justify-content:space-around}
 </style>
