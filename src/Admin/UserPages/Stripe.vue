@@ -250,7 +250,7 @@ export default {
   data: () => {
     return {
       email: "Silver",
-      price: 12000,
+      price: 1500,
       discount: 12,
       coupon: "APR15",
       card: {

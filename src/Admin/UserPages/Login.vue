@@ -36,7 +36,7 @@
 
                   <div class="d-flex mb-3 justify-center">
                     <span class="course-content-width">
-                      £ {{ ready_vet_data.price }}
+                      $ {{ ready_vet_data.price }}
                     </span>
                   </div>
 
